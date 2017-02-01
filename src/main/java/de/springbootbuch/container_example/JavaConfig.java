@@ -13,7 +13,7 @@ public class JavaConfig {
     }
     
     @Bean(name = "javaFoo")
-    public Foo foo(final Bar bar) {
-        return new Foo(bar);
+    public Foo foo() {
+        return new Foo(bar());
     }
 }
