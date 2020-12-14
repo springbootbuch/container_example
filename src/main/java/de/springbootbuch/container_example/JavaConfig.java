@@ -7,12 +7,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JavaConfig {
-    @Bean(name = "javaBar")
+    @Bean
+    (name = "javaBar")
     public Bar bar() {
         return new Bar();
     }
     
-    @Bean(name = "javaFoo")
+    @Bean
+    (name = "javaFoo")
     public Foo foo() {
         return new Foo(bar());
     }
